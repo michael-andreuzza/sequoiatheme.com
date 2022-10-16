@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Hero from "../components/landing/Hero.astro";
+import Hero from "../components/color/Hero.astro";
+import Content from "../components/color/Content.astro";
 import Footer from "../components/global/Footer.astro";
 import { AstroSeo } from "@astrolib/seo";
 ---
@@ -9,7 +10,7 @@ import { AstroSeo } from "@astrolib/seo";
 Use AstroSeo in all the pages you want different Seo than the index page
 -->
 <AstroSeo
-  title="Sequoia Theme | Home"
+  title="Sequoia Theme | Color palettes"
   description="Black, elegant, modern and gentle theme for VS Code and other UI's"
   canonical="https://www.sequoiatheme.com"
   openGraph={{
@@ -44,5 +45,6 @@ Use AstroSeo in all the pages you want different Seo than the index page
 />
 <BaseLayout>
   <Hero />
+  <Content />
   <Footer />
 </BaseLayout>
